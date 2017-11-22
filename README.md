@@ -1,92 +1,43 @@
 # Lyft
 
-* **Track:** _Common Core_
-* **Curso:** _Creando tu primer sitio web interactivo_
-* **Unidad:** _Maquetado web con HTML & CSS_
-
+Éste reto de código consistió en replicar el sitio **Lyft**
+![Lyft - Footer](docs/footer.gif)
+ Para lo cual empleé html y css.
 ***
 
-Para completar este reto, hemos creado este repositorio boilerplate (plantilla
-inicial) con todos los recursos que necesitas. Esto incluye imágenes y
-estructura de carpetas y archivos donde colocarás tu código.
-
-## Flujo de trabajo
-
-1. Debes realizar un [**fork**](https://gist.github.com/ivandevp/1de47ae69a5e139a6622d78c882e1f74)
-   de este repositorio.
-
-2. Luego deberás **clonar** tu fork en tu máquina. Recuerda que el comando a usar
-   es `git clone` y su estructura normalmente se ve así:
-
-   ```bash
-   git clone https://github.com/<nombre-de-usuario>/lyft.git
-   ```
-
-## Objetivo
-
-El reto consiste en replicar el sitio de **Lyft**, este será el resultado
-a lograr:
-
-![Lyft Website](docs/fullpage.png)
 
 ## Consideraciones
 
-* Encontrarás un archivo base `index.html` en el cual deberás escribir la
-  estructura de tu proyecto y enlazar tus archivos de estilos (CSS).
+* Use los archivos "index.html" y "main.css"
+para esctructurar mi código.
 
-* En la carpeta `css` tendrás un archivo base `main.css` donde agregarás los
-  estilos necesarios para tu proyecto:
+* Encontré todo el material (imagenes y archivos html y css) que necesitaba en las carpetas que clone del repositorio que Laboratoria me proporcionó.
 
-* Dentro de la carpeta `assets` se encuentra la carpeta `images` donde
-  encontrarás todas las imágenes necesarias para completar tu proyecto.
+* En dicho repositorio también se indicaba las tipografías, colores y videos que debía usar. También  el sitio donde obtener los iconos que necesité [Icomoon].
 
-* Deberás **actualizar el archivo `README.md`** explicando el contenido de tu
-  repositorio.
 
-* Esta web utiliza la tipografía `Montserrat`.
+## Flujo de trabajo
 
-* La paleta de colores puedes obtenerla inspeccionado el sitio original, pero
-  para ganar tiempo, puedes usar los siguientes:
+1. Primero hice la estructura del sitio en mi documento index.html.
 
-  - Botones, hover: `#FF00BF`
-  - Fondo de `footer`: `#333447`
-  - Título del formulario: `#352384`
-  - Texto del formulario: `#728099`
-  - Gradiente morado: `linear-gradient(#76278F, #2B1E66);`
+2. Enlace mi hoja de estilos al head de mi estructra básica de html con una etiqueta link.
 
-* Para el footer, deberás tomar en cuenta que tiene un hover y se ve como en la
-  siguiente imagen:
+  2.1 También enlace mi carpeta fonts donde guarde el archivo de la fuente de iconos Icommon.
 
-  ![Lyft - Footer](docs/footer.gif)
+  2.3 Enlace mi tipografía con el link de google fonts.
 
-  Además, los íconos deberás obtenerlo de `Icomoon`.
+3. En el body de mi estructura usé etiquetas de html semántico para dividir las partes de mi sitio (header, section,footer).
 
-* Para este reto, encontrarás ciertas cosas que probablemente aun no has visto
-  en clase (formularios, videos de Youtube). No te preocupes, estamos seguros
-  que los afrontarás con éxito, de igual forma aquí unos tips:
+4. En el **header** coloqué la imagen de fondo usando las propiedades background-image y backgrouns-size: cover; para que ocupara el fondo de mi sección a la cual le dije que ocupara el 100% de ancura. Dentro de la  barra de navecgación **nav** puse dos contenedores, uno con el logo de lyft y otro con la lista del menú.
 
-  - Estos son los videos de Youtube:
-    * https://www.youtube.com/watch?v=fLSmUWOYpKw
-    * https://www.youtube.com/watch?v=V7j8Aqxmbs8
-    * https://www.youtube.com/watch?v=xj2VWLV0xCU
-  - Para agregar los videos, averigua sobre la etiqueta `iframe`.
-  - Para el formulario, revisa las etiquetas como `form` e `input`.
+  4.1 fuera de nav pero aún dentro de header puse el contenedor con la información, input y los dos botones.
 
-* Puedes ver el [sitio original](https://www.lyft.com/), sin embargo, su diseño
-  ya ha cambiado en ciertas partes, así que tu fuente de verdad es la imagen que
-  muestra el objetivo de este reto.
+5.  En la primer sección coloqué dos contenedores que ocupan el 50% del anchi, dentro del primero puse 3 contenedores más, uno para cada parrafo. y en el segundo puse la imagen del telefono.
 
-  > Nota: El sitio original tiene ciertos efectos y funcionalidades que
-están fuera del alcance de este reto. Enfócate en obtener la maquetación
-lo más parecido posible, usando lo aprendido en clase ;)
+6. En la segunda sección puse tres contenedores y dentro de cada uno de ellos coloque dos más, uno donde coloque el texto a un 33% de ancho y el segundo para el video con 67% de ancho. Ambos los flote a la izquierda y para que no se empalmara con el siquiente contenenedor los limpie con la propiedad clear.
 
-## A tener en cuenta
+  6.1 Los videos de ésta sección los coloque con la etiqueta iframe y el enlace que youtube te da. El enlace viene con un ancho y alto predeterminado el cual cambie para que se adecuara a mi página.
 
-Este reto será evaluado sobre lo siguiente:
+7. El **footer** lo dividí con dos contenedores al 100% de ancho y dentro del primero puse 4 contenedores mas al 25% de ancho, dentro de los primeros 3 hice listas  para escribir los datos requeridos y les di hover. En la última coloque los logos de las tiendas en linea los que coloque en contenedores con un ancho y alto específico.
 
-* Pixel perfect (replicar el diseño con exactitud)
-* Estructura de carpetas y archivos
-* Nombramiento de clases, id, etc
-* Indentación
-* Archivo `README.md` actualizado y correctamente redactado
-* Uso de comentarios para hacer tu código más legible
+  7.1 En el segundo contenedor del Footer puse los iconos de las redes sociales isando las claves de Icomoon, y para finalizar usé un hr para dividirlo del copyrigth.
